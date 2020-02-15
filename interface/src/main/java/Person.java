@@ -6,4 +6,15 @@ public class Person {
         return budget > cost;
     }
 
+    public Person(int budget) {
+        this.budget = budget;
+    }
+
+    public int getBudget() {
+        return budget;
+    }
+
+    public void setBudget(int budget) {
+        this.budget = budget;
+    }
 }

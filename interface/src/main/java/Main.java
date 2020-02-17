@@ -5,17 +5,17 @@ public class Main {
         System.out.println("=================");
         System.out.println("Xiao ming has " + xiaoming.getBudget() + " yuan");
         Vehicle car = new Car();
-        checkAfford(xiaoming,car);
+        printAfford(xiaoming, car);
         Vehicle bus = new Bus();
-        checkAfford(xiaoming,bus);
+        printAfford(xiaoming, bus);
         Vehicle train = new Train();
-        checkAfford(xiaoming,train);
+        printAfford(xiaoming, train);
         Vehicle airplane = new Airplane();
-        checkAfford(xiaoming,airplane);
+        printAfford(xiaoming, airplane);
         System.out.println("==================");
     }
 
-    public static void checkAfford(Person person, Vehicle vehicle) {
+    public static void printAfford(Person person, Vehicle vehicle) {
         if (person.isAffordable(vehicle.getCost())) {
             System.out.print("can");
         } else {
